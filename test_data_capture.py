@@ -53,3 +53,4 @@ class TestDataCapture(unittest.TestCase):
         self.assertEqual(3, stats.between(4, 9))
         self.assertEqual(1, stats.between(7, 12))
         self.assertEqual(5, stats.between(0, 9))
+        self.assertEqual(5, stats.between(9, 0))
