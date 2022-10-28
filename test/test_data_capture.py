@@ -1,9 +1,17 @@
 import unittest
 
 from data_capture import DEFAULT_LIMITS
-from data_capture import DataCapture
 from data_capture.exceptions import DataCaptureValueError
-from . import DEFAULT_DATA_ERROR_TYPES, DEFAULT_DATA_ERROR_lIMITS
+from data_capture.models import DataCapture
+
+DEFAULT_DATA_ERROR_lIMITS = [-1, -1000, -100000, 1001, 100000, 10000000]
+DEFAULT_DATA_ERROR_TYPES = [
+    (str, "a"),
+    (float, 1.0),
+    (list, []),
+    (dict, {}),
+    (set, set()),
+]
 
 
 class TestDataCapture(unittest.TestCase):

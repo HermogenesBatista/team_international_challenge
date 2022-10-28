@@ -15,7 +15,7 @@ The time `O(1)` complexity expected, in other words solve it in constant time.
 ## How to run
 You can run the tests:
 ```
-python -m unittest test_data_capture.py
+python -m unittest test/test_*.py
 ```
 
 Or if you want to use in your code or shell:
